@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './ElementDuelBox.module.scss';
 import { Pick } from '../../models/PickModel';
+import styles from './ElementDuelBox.module.scss';
 
 type ElementDuelBoxProps = {
     userPick: Pick,

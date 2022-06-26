@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import styles from './Scoreboard.module.scss';
 import { RootState } from '../../store/store';
+import styles from './Scoreboard.module.scss';
 
 const Scoreboard = () => {
   const userScore = useSelector((state: RootState) => state.pick.userScore);
@@ -14,17 +14,27 @@ const Scoreboard = () => {
         Your score
         {' '}
         <br />
-        {userScore}
+        <span
+          className={(userScore > cpuScore) ? `${styles.winner_score}` : `${styles.score}`}
+        >
+          {userScore}
+        </span>
       </h2>
       <h2>
         Tie
         <br />
-        {tieScore}
+        <span>
+          {tieScore}
+        </span>
       </h2>
       <h2>
         CPU score
         <br />
-        {cpuScore}
+        <span
+          className={(userScore < cpuScore) ? `${styles.winner_score}` : `${styles.score}`}
+        >
+          {cpuScore}
+        </span>
       </h2>
     </div>
   );

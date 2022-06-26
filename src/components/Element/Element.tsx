@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './Element.module.scss';
 import { Pick } from '../../models/PickModel';
+import styles from './Element.module.scss';
 
 type ElementProps = {
     element: Pick,
-    getWinner: (userPick: Pick, cpuPick: Pick) => string,
+    getWinner: (userPick: Pick, cpuPick: Pick) => void,
     getCpuPick: () => Pick;
 }
 
