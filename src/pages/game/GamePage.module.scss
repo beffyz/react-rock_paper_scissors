@@ -1,0 +1,33 @@
+.game {
+  background-image: url("../../assets/images/app-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game_scoreboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.game_picks {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 700px;
+  margin-bottom: 100px;
+}
+
+.game_pick {
+  background-image: url("../../assets/images/spock.png");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid black;
+
+  &:hover {
+    cursor: pointer;
+    background-color: dodgerblue;
+  }
+}
