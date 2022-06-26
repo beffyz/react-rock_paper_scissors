@@ -1,0 +1,12 @@
+.element {
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid black;
+
+  &:hover {
+    cursor: pointer;
+    background-color: dodgerblue;
+  }
+}
