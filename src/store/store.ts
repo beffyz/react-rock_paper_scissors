@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import PickReducer from './reducers/PickReducer';
+import ScoreboardReducer from './reducers/ScoreboardReducer';
 
 const store = configureStore({
   reducer: {
-    pick: PickReducer,
+    pick: ScoreboardReducer,
   },
 });
 
